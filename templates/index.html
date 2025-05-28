@@ -1,0 +1,159 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+{% include 'header.html' %}
+
+<body data-bs-spy="scroll" data-bs-target="#navbar-example2" data-bs-smooth-scroll="true" tabindex="0">
+
+<div class="container">
+    <!--    Navbar     -->
+    <nav id="navbar-example2" class="navbar navbar-expand-lg nav-color text-white px-3 mb-3"
+         style="border-bottom-left-radius: 15px; border-bottom-right-radius: 15px; position: sticky; top: 0; z-index: 1030; height: 60px;">
+        <div class="container-fluid d-flex align-items-center">
+            <a class="navbar-brand d-flex align-items-center" href="{{ url_for('home') }}"
+               style="height: 100%;">
+                <img src="static/images/logo_2.png"
+                     alt="Logo"
+                     style="height: 40px; transform: scale(1.5); transform-origin: left center;"
+                     class="me-2">
+            </a>
+
+            <ul class="nav nav-pills ms-auto">
+                <li class="nav-item">
+                    <a class="nav-link fs-5" href="#scrollspyHeading1">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link fs-5" href="#scrollspyHeading2">Portfolio</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link fs-5" href="#scrollspyHeading3">Skills</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle fs-5" data-bs-toggle="dropdown" href="#" role="button"
+                       aria-expanded="false">More</a>
+                    <ul class="dropdown-menu dropdown-menu-end">
+                        <li><a class="dropdown-item" href="{{ url_for('contact') }}">Say Hi!</a></li>
+                        <li><a class="dropdown-item" href="#scrollspyHeading5">My Links</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!--    Impact!    -->
+    <div class="px-4 py-5 mt-5 mb-4 text-center">
+        <div class="image-rounded mt-5">
+            <img src="static/images/my_anime_sq.jpg" alt="picture of my-self in anime style" width="" height="240">
+        </div>
+        <h1 class="display-5 fw-bold general-text mt-4">{ JUAN SILVA }</h1>
+        <div class="col-lg-6 mx-auto general-text">
+            <p class="lead mt-4 mb-4 fs-4">Starting my journey in Python development,<br>one line of code at a time!
+                🚀🖥️</p>
+        </div>
+    </div>
+
+    <!--    Intro    -->
+    <div id="scrollspyHeading1" class="px-4 pt-5 my-5 text-center shadow-lg bg-white" style="border-radius: 15px;">
+        <h1 class="display-4 fw-bold lh-1 text-body-emphasis">Hi, it's great to have you here.</h1>
+        <div class="col-lg-8 mx-auto">
+            <p class="lead my-5">Although I'm just starting my journey as a Python developer, my passion for technology
+                goes way back. I studied Industrial Engineering and graduated in 2013, but I always felt a natural
+                connection with computers and problem-solving. I still remember how much I enjoyed an algorithms course
+                during my studies — my professor even encouraged me to pursue it further. <br>
+
+                Today, I'm finally following that passion. I'm currently finishing a Python course and eager to keep
+                learning, growing, and building meaningful projects. <br>
+
+                I'm energetic, detail-oriented, and always focused on doing things right and helping others. My goal is
+                to become a highly skilled developer, create my own tech company, and reach financial independence
+                through dedication and great work. <br>
+
+                Let's build something awesome!</p>
+        </div>
+        <div class="overflow-hidden" style="max-height: 60vh;">
+            <div class="container px-5 mb-5 rounded-4"><img src="static/images/pc.jpg"
+                                                            class="img-fluid border rounded-4 shadow-lg mb-4"
+                                                            alt="pc-with-code" width="600" loading="lazy"></div>
+        </div>
+    </div>
+
+    <!--    Portfolio    -->
+
+    <div class="container my-5" id="scrollspyHeading2">
+        <div class="row p-4 pb-0 pe-lg-0 pt-lg-5 align-items-center rounded-3 shadow-lg">
+            <div class="col-lg-7 p-3 p-lg-5 pt-lg-3"><h1 class="display-4 fw-bold lh-1 text-body-emphasis">
+                Portfolio</h1>
+                <p class="lead my-5">This portfolio is still a work in progress — I’m just getting started, but I’m
+                    building it with passion. In the meantime, feel free to check out some of my GitHub
+                    repositories!</p>
+                <div class="d-grid gap-2 d-md-flex justify-content-md-start mb-4 mb-lg-3">
+                    <a href="https://github.com/TeRRa2386?tab=repositories" target="_blank"
+                       class="btn btn-primary btn-lg px-4 me-md-2 fw-bold d-inline-block">
+                        GitHub
+                    </a>
+                </div>
+            </div>
+            <div class="col-lg-4 offset-lg-1 p-0 overflow-hidden shadow-lg rounded-start-4">
+                <img class="rounded-start-4" src="static/images/coding.jpg" alt="some devices interconnected"
+                     width="550">
+            </div>
+        </div>
+    </div>
+
+    <!--    Skills    -->
+    <div class="pricing-header p-3 pb-md-4 mx-auto text-center"><h1 class="display-4 fw-bold lh-1 text-body-emphasis">
+        Skills</h1>
+    </div>
+    <div class="row row-cols-1 row-cols-md-2 mb-5 text-center" id="scrollspyHeading3">
+        <div class="col">
+            <div class="card mb-4 rounded-3 shadow-sm border-primary h-100 d-flex flex-column">
+                <div class="card-header py-3 card-gradient-background"><h4 class="my-0 fw-normal text-white"> 🐍 Python
+                    Development</h4>
+                </div>
+                <div class="card-body"><h5 class="card-title pricing-card-title mt-2 mb-4">I build scripts and applications using
+                    clean Python code. My experience includes automation, data structures, OOP, and task-driven
+                    projects.</h5>
+                    <ul class="list-unstyled mt-4 mb-4">
+                        <li>Python fundamentals & OOP</li>
+                        <li>Automation with Selenium & BeautifulSoup</li>
+                        <li>File handling & error management</li>
+                        <li>Game dev basics with Turtle & PyGame</li>
+                        <li>Email automation & APIs</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card mb-4 rounded-3 shadow-sm border-primary h-100 d-flex flex-column">
+                <div class="card-header py-3 card-gradient-background"><h4 class="my-0 fw-normal text-white"> 🌐 Web
+                    Development</h4>
+                </div>
+                <div class="card-body">
+                    <h5 class="card-title pricing-card-title mt-2 mb-4">I develop functional web apps using
+                        Flask. I work with routes, templates, and databases, and style interfaces with Bootstrap.
+                    </h5>
+                    <ul class="list-unstyled mt-5 mb-4">
+                        <li>Flask & Jinja2 templating</li>
+                        <li>Form handling & validation</li>
+                        <li>SQLite integration</li>
+                        <li>REST APIs & external API consumption</li>
+                        <li>HTML, CSS, Bootstrap basics</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+<!--    Footer    -->
+{% include 'footer.html' %}
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO"
+        crossorigin="anonymous"></script>
+
+</body>
+
+</html>

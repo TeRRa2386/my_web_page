@@ -1,0 +1,28 @@
+# Entorno virtual
+venv/
+env/
+
+# Archivos de configuración del entorno
+*.pyc
+__pycache__/
+*.pyo
+*.pyd
+
+# Archivos ocultos de sistema
+.DS_Store
+Thumbs.db
+
+# Archivos temporales o personales
+*.log
+*.sqlite3
+*.db
+instance/
+*.env
+
+# Editor/IDE
+.vscode/
+.idea/
+*.swp
+
+# Subidas de usuarios o datos temporales
+uploads/

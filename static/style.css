@@ -1,0 +1,68 @@
+body {
+    background-image: url("/static/images/background.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    height: 100vh;
+    margin: 0;
+}
+
+.image-rounded {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    overflow: hidden;
+    display: inline-block;
+}
+
+.image-rounded img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.general-text {
+    color: white;
+}
+
+.nav-color {
+    background: linear-gradient(90deg, #2c003e, #17004c, #001f54, #2c003e);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.6);
+    background-size: 300% 100%;
+    animation: moveGradient 10s ease infinite;
+}
+
+.card-gradient-background {
+    background: linear-gradient(90deg, #2c003e, #17004c, #001f54, #2c003e);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.6);
+    background-size: 300% 100%;
+    animation: moveGradient 10s ease infinite;
+}
+
+@keyframes moveGradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.footer-cosmic {
+    background-image: url("/static/images/background.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    padding-top: 20vh;
+    padding-bottom: 2rem;
+    margin: 0;
+    position: relative;
+    color: white;
+}
+
+#navbar-example2 {
+  transition: opacity 0.5s ease;
+}
