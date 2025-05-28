@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 
@@ -9,41 +8,49 @@
 <div class="container">
     <!--    Navbar     -->
     <nav id="navbar-example2" class="navbar navbar-expand-lg nav-color text-white px-3 mb-3"
-         style="border-bottom-left-radius: 15px; border-bottom-right-radius: 15px; position: sticky; top: 0; z-index: 1030; height: 60px;">
-        <div class="container-fluid d-flex align-items-center">
-            <a class="navbar-brand d-flex align-items-center" href="{{ url_for('home') }}"
-               style="height: 100%;">
+         style="border-bottom-left-radius: 15px; border-bottom-right-radius: 15px; position: sticky; top: 0; z-index: 1030;">
+        <div class="container-fluid">
+            <a class="navbar-brand d-flex align-items-center" href="{{ url_for('home') }}">
                 <img src="static/images/logo_2.png"
                      alt="Logo"
                      style="height: 40px; transform: scale(1.5); transform-origin: left center;"
                      class="me-2">
             </a>
 
-            <ul class="nav nav-pills ms-auto">
-                <li class="nav-item">
-                    <a class="nav-link fs-5" href="#scrollspyHeading1">About</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link fs-5" href="#scrollspyHeading2">Portfolio</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link fs-5" href="#scrollspyHeading3">Skills</a>
-                </li>
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle fs-5" data-bs-toggle="dropdown" href="#" role="button"
-                       aria-expanded="false">More</a>
-                    <ul class="dropdown-menu dropdown-menu-end">
-                        <li><a class="dropdown-item" href="{{ url_for('contact') }}">Say Hi!</a></li>
-                        <li><a class="dropdown-item" href="#scrollspyHeading5">My Links</a></li>
-                    </ul>
-                </li>
-            </ul>
+            <!-- Botón hamburguesa -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!-- Menú colapsable -->
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="nav nav-pills ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link fs-5" href="#scrollspyHeading1">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link fs-5" href="#scrollspyHeading2">Portfolio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link fs-5" href="#scrollspyHeading3">Skills</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle fs-5" data-bs-toggle="dropdown" href="#" role="button"
+                           aria-expanded="false">More</a>
+                        <ul class="dropdown-menu dropdown-menu-end">
+                            <li><a class="dropdown-item" href="{{ url_for('contact') }}">Say Hi!</a></li>
+                            <li><a class="dropdown-item" href="#scrollspyHeading5">My Links</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
         </div>
     </nav>
 
     <!--    Impact!    -->
     <div class="px-4 py-5 mt-5 mb-4 text-center">
-        <div class="image-rounded mt-5">
+        <div class="image-rounded mt-4">
             <img src="static/images/my_anime_sq.jpg" alt="picture of my-self in anime style" width="" height="240">
         </div>
         <h1 class="display-5 fw-bold general-text mt-4">{ JUAN SILVA }</h1>
@@ -74,29 +81,35 @@
         <div class="overflow-hidden" style="max-height: 60vh;">
             <div class="container px-5 mb-5 rounded-4"><img src="static/images/pc.jpg"
                                                             class="img-fluid border rounded-4 shadow-lg mb-4"
-                                                            alt="pc-with-code" width="600" loading="lazy"></div>
+                                                            width="600" loading="lazy" alt="pc-with-code">
+            </div>
         </div>
     </div>
 
     <!--    Portfolio    -->
 
     <div class="container my-5" id="scrollspyHeading2">
-        <div class="row p-4 pb-0 pe-lg-0 pt-lg-5 align-items-center rounded-3 shadow-lg">
-            <div class="col-lg-7 p-3 p-lg-5 pt-lg-3"><h1 class="display-4 fw-bold lh-1 text-body-emphasis">
-                Portfolio</h1>
-                <p class="lead my-5">This portfolio is still a work in progress — I’m just getting started, but I’m
-                    building it with passion. In the meantime, feel free to check out some of my GitHub
-                    repositories!</p>
+        <div class="row p-4 pb-0 pe-lg-0 pt-lg-5 align-items-center rounded-4 shadow-lg">
+
+            <!-- Text -->
+            <div class="col-lg-7 p-3 p-lg-5 pt-lg-3">
+                <h1 class="display-4 fw-bold lh-1 text-body-emphasis">Portfolio</h1>
+                <p class="lead my-4">
+                    This portfolio is still a work in progress — I’m just getting started, but I’m building it with
+                    passion.
+                    In the meantime, feel free to check out some of my GitHub repositories!
+                </p>
                 <div class="d-grid gap-2 d-md-flex justify-content-md-start mb-4 mb-lg-3">
                     <a href="https://github.com/TeRRa2386?tab=repositories" target="_blank"
-                       class="btn btn-primary btn-lg px-4 me-md-2 fw-bold d-inline-block">
+                       class="btn btn-primary btn-lg px-4 me-md-2 fw-bold">
                         GitHub
                     </a>
                 </div>
             </div>
-            <div class="col-lg-4 offset-lg-1 p-0 overflow-hidden shadow-lg rounded-start-4">
-                <img class="rounded-start-4" src="static/images/coding.jpg" alt="some devices interconnected"
-                     width="550">
+
+            <!-- Imagen -->
+            <div class="col-lg-4 offset-lg-1 p-0 overflow-hidden shadow-lg rounded-start-4 mb-4">
+                <img class="img-fluid rounded-start-4" src="static/images/coding.jpg" alt="some devices interconnected">
             </div>
         </div>
     </div>
@@ -111,7 +124,8 @@
                 <div class="card-header py-3 card-gradient-background"><h4 class="my-0 fw-normal text-white"> 🐍 Python
                     Development</h4>
                 </div>
-                <div class="card-body"><h5 class="card-title pricing-card-title mt-2 mb-4">I build scripts and applications using
+                <div class="card-body"><h5 class="card-title pricing-card-title mt-2 mb-4">I build scripts and
+                    applications using
                     clean Python code. My experience includes automation, data structures, OOP, and task-driven
                     projects.</h5>
                     <ul class="list-unstyled mt-4 mb-4">

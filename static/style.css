@@ -66,3 +66,38 @@ body {
 #navbar-example2 {
   transition: opacity 0.5s ease;
 }
+
+.navbar-toggler-icon {
+    filter: brightness(0) invert(1);
+}
+
+.navbar-toggler {
+    border: 1px solid white;
+}
+
+.dropdown-menu {
+    z-index: 9999;
+    position: absolute !important;
+}
+
+.navbar {
+    overflow: visible !important;
+}
+
+@media (max-width: 768px) {
+    .dropdown-menu {
+        left: 0 !important;
+        right: 0 !important;
+        width: 90%;
+        margin: 0 auto;
+    }
+}
+
+.coding-image {
+    max-width: 100%;
+    width: 550px;  /* tamaño que te gusta */
+    height: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
